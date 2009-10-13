@@ -79,7 +79,8 @@ window.tests = {
 	},
 	
 	"sethtml": function(){
-		return Y.all('div').set('innerHTML', '<p>new content</p>').size();
+		Y.all('div').set('innerHTML', '<p>new content</p>');
+		return Y.all('div').length;
 	},
 	
 	"insertbefore" : function(){
